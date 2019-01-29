@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/first_item"
+        android:icon="@android:drawable/ic_dialog_info"
+        android:title="@string/first_item_title"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/second_item"
+        android:title="Second Item"
+        android:icon="@drawable/arrow_s_t"
+        app:showAsAction="ifRoom" />
+    <group
+        android:id="@+id/my_group"
+        android:checkableBehavior="all">
+        <item
+            android:id="@+id/first_in_group"
+            android:title="First in group" />
+        <item
+            android:id="@+id/second_in_group"
+            android:title="Second in group" />
+    </group>
+    <item android:title="Sub Menu">
+        <menu>
+            <item
+                android:id="@+id/first_in_submenu"
+                android:checkable="true"
+                android:icon="@android:drawable/ic_menu_add"
+                android:title="First in menu" />
+            <item
+                android:id="@+id/second_in_submenu"
+                android:title="Second in menu" />
+        </menu>
+    </item>
+</menu>
